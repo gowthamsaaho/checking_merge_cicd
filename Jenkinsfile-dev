@@ -5,15 +5,15 @@ pipeline {
         maven 'maven3'
     }
     stages {
-        stage('maven Build 2d') {
+        stage('maven Build ') {
             steps {
-                echo 'it is dev  branch launched'
-                echo 'mvn clean install'
+                echo 'it is dev  branch launched fr build'
+                echo 'mvn clean build'
             }
         }    
-        stage('maven test') {
+        stage('maven clean') {
             steps {
-                echo 'it is dev  branch launched'
+                echo 'it is dev  branch launched fr clean test'
                 echo 'mvn clean test'
             }
         }

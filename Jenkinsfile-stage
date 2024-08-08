@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+    tools{
+        jdk 'java17'
+        maven 'maven3'
+    }
+    stages {
+        stage('maven Build') {
+            steps {
+                echo 'it is stage  branch launched fr build'
+                echo 'mvn clean install'
+            }
+        }  
+
+        stage('maven clean ') {
+            steps {
+                echo 'it is stage  branch launched clean'
+                echo 'mvn clean test'
+            }
+        }
+
+          stage('maven install ') {
+            steps {
+                echo 'it is last stage branch launched install'
+                echo 'mvn clean install'
+            }
+        }
+    }
+}
+
+
+

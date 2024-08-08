@@ -7,7 +7,11 @@ pipeline {
     stages {
         stage('maven Build ') {
             steps {
+<<<<<<< Updated upstream
                 echo 'it is dev  branch launched fr build'
+=======
+                echo 'it is dev  branch launched'
+>>>>>>> Stashed changes
                 echo 'mvn clean build'
             }
         }    
